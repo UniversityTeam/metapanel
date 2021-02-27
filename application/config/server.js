@@ -1,8 +1,8 @@
 ({
   host: '0.0.0.0',
-  balancer: this.process.env.PORT,
+  balancer: this.process.env.PORT || 8000,
   protocol: 'http',
-  ports: [this.process.env.PORT],
+  ports: [],
   timeout: 5000,
   concurrency: 1000,
   queue: {
