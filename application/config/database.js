@@ -1,7 +1,4 @@
 ({
-  host: '127.0.0.1',
-  port: 5432,
-  database: 'application',
-  user: 'marcus',
-  password: 'marcus',
+  connectionString: this.process.env.DATABASE_URL || 'postgresql://marcus:marcus@localhost:5432/application',
+  ssl: !!this.process.env.DATABASE_URL
 });
