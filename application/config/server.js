@@ -1,6 +1,6 @@
 ({
   host: '127.0.0.1',
-  balancer: this.process.env.PORT,
+  balancer: process.env.PORT,
   protocol: 'http',
   ports: [],
   timeout: 5000,
