@@ -11,7 +11,7 @@
   "main": "server.js",
   "scripts": {
     "lint": "eslint . --fix",
-    "start": "sh application/cert/generate.sh && node server.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": "^12.9 || 14 || 15"
