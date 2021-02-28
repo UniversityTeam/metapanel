@@ -1,3 +1,4 @@
-psql -f install.sql -U postgres
-PGPASSWORD=marcus psql -d application -f structure.sql -U marcus
-PGPASSWORD=marcus psql -d application -f data.sql -U marcus
+[[ -z "$DATABASE_URL" ]] && export DATABASE_URL='postgresql://postgres@localhost:5432/postgres'
+psql -f install.sql $DATABASE_URL
+psql -f structure.sql $DATABASE_URL
+psql -f data.sql $DATABASE_URL
