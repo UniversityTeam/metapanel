@@ -10,7 +10,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
     "start": "sh application/cert/generate.sh && node server.js"
   },
   "engines": {
