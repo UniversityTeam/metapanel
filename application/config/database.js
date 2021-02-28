@@ -1,4 +1,4 @@
 ({
-  connectionString: this.process.env.DATABASE_URL || 'postgresql://postgres@localhost:5432/postgres',
+  connectionString: this.process.env.DATABASE_URL,
   ssl: !!this.process.env.DATABASE_URL
 });
